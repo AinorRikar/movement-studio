@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "siteTitle": "Movement Studio",
+    "siteName": "Movement Studios",
+    "logoShort": "Mov. Stu."
+  },
+  "seo": {
+    "titleTemplate": "%s · Movement Studio",
+    "defaultTitle": "Movement Studio — танцевальная студия",
+    "description": "Современный танец, хип-хоп и джаз в Brooklyn. Занятия для всех уровней — запишитесь в Movement Studio.",
+    "ogImage": "/images/hero.jpg",
+    "pages": {
+      "home": {
+        "title": "Главная",
+        "description": "Movement Studio — поддерживающая среда для танцоров любого уровня. Hip-hop, jazz, contemporary в Brooklyn."
+      },
+      "about": {
+        "title": "О нас",
+        "description": "Основатели, преподаватели и пространство Movement Studio — узнайте больше о нашей студии."
+      },
+      "classes": {
+        "title": "Занятия",
+        "description": "Расписание занятий hip-hop, jazz и contemporary. Запись на групповые и открытые классы."
+      }
+    }
+  },
+  "nav": {
+    "links": [
+      { "label": "Занятия", "to": "/classes" },
+      { "label": "О нас", "to": "/about-us" }
+    ],
+    "address": "224 Nostrand Ave, Brooklyn, NY",
+    "menuAria": "Меню",
+    "addressAria": "Адрес студии"
+  },
+  "common": {
+    "bookNow": "Записаться",
+    "bookWithUs": "Записаться к нам"
+  },
+  "promo": {
+    "items": [
+      "Плавно. Выразительно. Мощно. Танцуйте с нами!",
+      "Мастер-класс: гостевой хореограф в эту субботу",
+      "Набор на занятия contemporary — успейте записаться"
+    ]
+  },
+  "home": {
+    "hero": {
+      "title": "Найди свой ритм.",
+      "imageAlt": "Танцоры в движении"
+    },
+    "vision": {
+      "title": "Видение",
+      "imageAlt": "Танцор в синем свете",
+      "label": "Кто мы",
+      "body": "В Movement Studio мы создаём поддерживающую и вдохновляющую среду для танцоров любого уровня. Новичок, желающий открыть для себя современный танец, опытный артист, совершенствующий технику, или человек, которому просто радостно двигаться — здесь каждый найдёт своё место."
+    },
+    "classesPreview": {
+      "title": "Занятия",
+      "imageAlt": "Танцор в пурпурном свете",
+      "label": "Наши занятия",
+      "body": "Хип-хоп, джаз и контактная импровизация — в Movement Studio разнообразные классы для каждого танцора."
+    },
+    "founders": {
+      "title": "Наши основатели",
+      "quote": "Найди свой поток и танцуй свою правду.",
+      "quoteAuthor": "— София Беннетт",
+      "sophia": {
+        "name": "София Беннетт",
+        "role": "Основатель и преподаватель"
+      },
+      "alisa": {
+        "name": "Алиса Моррис",
+        "role": "Основатель и менеджер программ"
+      }
+    }
+  },
+  "about": {
+    "pageTitle": "О нас",
+    "heroImageAlt": "О студии",
+    "founders": {
+      "title": "Основатели",
+      "sophia": {
+        "name": "София Беннетт",
+        "role": "Основатель и преподаватель"
+      },
+      "alisa": {
+        "name": "Алиса Моррис",
+        "role": "Основатель и менеджер программ"
+      }
+    },
+    "instructors": {
+      "title": "Преподаватели",
+      "people": [
+        {
+          "name": "Майя Родригес",
+          "role": "Преподаватель модерна и contemporary",
+          "bio": "Страсть Майи к современному танцу заразительна. Опыт выступлений и хореографии помогает ей вести динамичные и выразительные занятия.",
+          "image": "/images/instructor-1.jpg"
+        },
+        {
+          "name": "Кай Чен",
+          "role": "Преподаватель hip-hop foundations и freestyle",
+          "bio": "Энергия Кая и любовь к хип-хопу очевидны с первых минут. Более десяти лет в культуре — от old school до современных стилей.",
+          "image": "/images/instructor-2.jpg"
+        },
+        {
+          "name": "Лена Эванс",
+          "role": "Преподаватель jazz technique и jazz funk",
+          "bio": "Лена привносит в джаз яркую энергию. Классическая техника и любовь к фанковому, насыщенному движению.",
+          "image": "/images/instructor-3.jpg"
+        },
+        {
+          "name": "Жасмин Патель",
+          "role": "Преподаватель модерна и contemporary",
+          "bio": "Жасмин умеет сделать современный танец доступным и приятным для начинающих — мягкое знакомство с основами движения.",
+          "image": "/images/instructor-4.jpg"
+        },
+        {
+          "name": "Рикки Гомес",
+          "role": "Преподаватель hip-hop choreography",
+          "bio": "Рикки делится страстью и опытом работы с танцевальными коллективами и артистами.",
+          "image": "/images/instructor-1.jpg"
+        },
+        {
+          "name": "Ноа Синклер",
+          "role": "Преподаватель импровизации для сцены",
+          "bio": "Ноа — мастер спонтанного движения и контакта. Глубокое понимание contact improvisation и доверия в паре.",
+          "image": "/images/instructor-2.jpg"
+        }
+      ]
+    },
+    "space": {
+      "title": "Наше пространство",
+      "imageAlt": "Зал студии",
+      "body": "В Movement Studio мы создаём поддерживающую и вдохновляющую среду для танцоров любого уровня. Новичок или опытный танцор — у нас найдутся занятия для вас."
+    }
+  },
+  "classes": {
+    "pageTitle": "Занятия",
+    "heroImageAlt": "Занятия в студии",
+    "booking": {
+      "title": "Запись на занятия",
+      "rowLabel": "B2",
+      "rowBody": "Приходите на еженедельные занятия, открытые уровни или частные уроки — для новичков и тех, кто возвращается в зал.",
+      "cards": [
+        {
+          "code": "C1",
+          "title": "Hip Hop Foundations",
+          "description": "Изоляции, popping, locking и базовый футворк — знакомство с хип-хопом.",
+          "schedule": "Вторник, 19:00 – 21:00",
+          "image": "/images/card-c1.jpg"
+        },
+        {
+          "code": "C2",
+          "title": "Hip Hop Freestyle",
+          "description": "Собственный словарь движений и импровизация в моменте.",
+          "schedule": "Среда, 19:00 – 21:00",
+          "image": "/images/card-c2.jpg"
+        },
+        {
+          "code": "C4",
+          "title": "Jazz Technique",
+          "description": "Классический джаз: сила, гибкость и музыкальность.",
+          "schedule": "Четверг, 19:00 – 21:00",
+          "image": "/images/card-c4.jpg"
+        },
+        {
+          "code": "D5",
+          "title": "Jazz Funk",
+          "description": "Для тех, кто любит танцевать мощно и с характером.",
+          "schedule": "Пятница, 19:00 – 21:00",
+          "image": "/images/vision.jpg"
+        }
+      ]
+    },
+    "promise": {
+      "title": "Почему мы?",
+      "imageAlt": "Танцоры",
+      "body": "Новичок или опытный танцор — у нас есть занятия для вас: откройте для себя выразительное движение или углубите технику."
+    }
+  },
+  "cta": {
+    "body": "Новичок или опытный танцор — у нас есть занятия для вас: откройте для себя выразительное движение или углубите технику."
+  },
+  "footer": {
+    "contact": {
+      "emailLabel": "Email:",
+      "email": "hello@figma.com",
+      "instagramLabel": "Instagram:",
+      "instagram": "@figma",
+      "facebookLabel": "Facebook:",
+      "facebook": "figma"
+    },
+    "address": {
+      "label": "Адрес:",
+      "line1": "224 Candyland Lane, Brooklyn, NY",
+      "phone": "(646) 555-4567",
+      "copyright": "Movement Studios© 2025 Все права защищены"
+    },
+    "socialsTitle": "Соцсети",
+    "links": {
+      "ourSocials": "Наши соцсети",
+      "emailUs": "Напишите нам",
+      "bookWithUs": "Записаться"
+    }
+  }
+}

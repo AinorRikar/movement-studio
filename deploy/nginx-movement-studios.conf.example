@@ -1,0 +1,27 @@
+# Пример для добавления в nginx MySite (не применяется автоматически).
+# Контейнер movement-studios-app должен быть в сети docker network «web».
+
+upstream movement_studios_app {
+    server movement-studios-app:3000;
+    keepalive 16;
+}
+
+# Внутри server { listen 80; ... } или server { listen 443 ssl; ... }:
+
+location /movement-studios/ {
+    proxy_pass http://movement_studios_app/;
+    proxy_http_version 1.1;
+
+    proxy_set_header Host              $host;
+    proxy_set_header X-Real-IP         $remote_addr;
+    proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-Host  $host;
+    proxy_set_header X-Forwarded-Prefix /movement-studios;
+
+    proxy_set_header Upgrade    $http_upgrade;
+    proxy_set_header Connection "upgrade";
+
+    proxy_read_timeout 60s;
+    proxy_send_timeout 60s;
+}

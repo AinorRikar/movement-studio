@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
+  body {
+    @apply bg-brand-white font-heading text-brand-black;
+  }
+}
+
+@layer components {
+  /* ─── Typography (Figma) ─── */
+  .text-display {
+    @apply font-display text-[126px] font-semibold leading-[0.9] tracking-[-0.02em];
+  }
+
+  .text-display-sm {
+    @apply font-display text-[clamp(2.75rem,10.5vw,7.875rem)] font-semibold leading-[0.9] tracking-[-0.02em];
+  }
+
+  .text-title {
+    @apply font-heading text-[37px] font-semibold leading-[1.1] tracking-[-0.02em];
+  }
+
+  .text-title-sm {
+    @apply font-heading text-[clamp(1.625rem,4vw,2.375rem)] font-semibold leading-[1.1] tracking-[-0.02em];
+  }
+
+  .text-label {
+    @apply font-heading text-[20px] font-semibold leading-[0.9] tracking-[-0.02em];
+  }
+
+  .text-nav {
+    @apply font-heading text-[18px] font-normal leading-none tracking-[-0.02em];
+  }
+
+  .text-site-logo {
+    @apply font-heading text-[30px] font-normal leading-none tracking-[-0.02em];
+  }
+
+  /* Иконка вместо «M» — нижний край по нижнему краю текста логотипа */
+  .site-logo-wordmark {
+    @apply inline-flex items-end;
+  }
+
+  .site-logo-mark {
+    @apply -mr-10 block shrink-0 object-contain object-bottom;
+    height: 1em;
+    width: auto;
+  }
+
+  .text-nav-cta {
+    @apply font-body text-[12px] font-normal leading-none tracking-[-0.02em];
+  }
+
+  .text-quote {
+    @apply font-heading text-[30px] font-normal leading-[1.1] tracking-[-0.02em];
+  }
+
+  .text-body {
+    @apply font-heading text-[17px] font-normal leading-[1.2] tracking-[-0.02em];
+  }
+
+  .text-promo {
+    @apply font-heading text-[15px] font-semibold leading-none tracking-[-0.02em];
+  }
+
+  .text-cta {
+    @apply font-heading text-[clamp(1.5rem,3.5vw,2.3125rem)] font-semibold leading-[1.1] tracking-[-0.02em];
+  }
+
+  .text-card-code {
+    @apply font-body text-[40px] font-normal leading-[0.9] tracking-[-0.06em];
+  }
+
+  .text-card-title {
+    @apply font-heading text-[20px] font-semibold leading-tight tracking-[-0.02em];
+  }
+
+  .text-person-name {
+    @apply font-heading text-[24px] font-semibold leading-none tracking-[-0.02em];
+  }
+
+  .text-footer {
+    @apply font-body text-[16px] font-normal leading-[1.1] tracking-[-0.02em];
+  }
+
+  .text-footer-sm {
+    @apply font-body text-[12px] font-normal leading-[1.37] tracking-[-0.02em];
+  }
+
+  .text-footer-logo {
+    @apply font-display text-[clamp(3.5rem,12vw,7.875rem)] font-semibold leading-[0.9] tracking-[-0.02em];
+  }
+
+  .text-footer-cta {
+    @apply font-accent text-[24px] font-bold leading-none tracking-[-0.02em];
+  }
+
+  .content-block {
+    @apply w-full max-w-[420px];
+  }
+
+  /* ─── Unified spacing ─── */
+  .page-inset-x {
+    @apply px-4 desktop:px-8;
+  }
+
+  .content-inset-x {
+    @apply px-6 desktop:px-8;
+  }
+
+  .sidebar-col {
+    @apply self-start px-6 py-12 desktop:sticky desktop:top-[76px] desktop:px-12 desktop:py-16;
+  }
+
+  .stack-4 {
+    @apply mt-4;
+  }
+
+  .stack-6 {
+    @apply mt-6;
+  }
+
+  .stack-8 {
+    @apply mt-8;
+  }
+
+  .stack-10 {
+    @apply mt-10;
+  }
+
+  /* ─── 12-column fluid grid ─── */
+  .site-grid {
+    @apply grid w-full grid-cols-1 gap-0 desktop:grid-cols-12;
+  }
+
+  .col-full {
+    @apply col-span-1 desktop:col-span-12;
+  }
+
+  .col-half {
+    @apply col-span-1 desktop:col-span-6;
+  }
+
+  .col-third {
+    @apply col-span-1 desktop:col-span-4;
+  }
+
+  .col-two-thirds {
+    @apply col-span-1 desktop:col-span-8;
+  }
+
+  .col-cta {
+    @apply col-span-1 desktop:col-span-9 desktop:col-start-2;
+  }
+
+  .grid-cards-2 {
+    @apply grid grid-cols-1 gap-0 tablet:grid-cols-2;
+  }
+
+  .row-nav {
+    @apply h-[76px];
+  }
+
+  .row-hero {
+    @apply min-h-[650px];
+  }
+
+  .row-promo {
+    @apply min-h-[50px];
+  }
+
+  .row-module {
+    @apply min-h-[400px] desktop:min-h-[640px];
+  }
+
+  .row-founders {
+    @apply min-h-0 desktop:min-h-[800px];
+  }
+
+  .row-founders-compact {
+    @apply min-h-[497px];
+  }
+
+  .row-cta {
+    @apply min-h-[462px] desktop:min-h-[499px];
+  }
+
+  .row-card {
+    @apply min-h-[480px];
+  }
+
+  .row-footer-main {
+    @apply min-h-0 desktop:min-h-[470px];
+  }
+
+  .row-footer-links {
+    @apply items-end overflow-visible desktop:h-[188px] desktop:max-h-[188px];
+  }
+
+  .row-space {
+    @apply min-h-[320px] desktop:min-h-[480px];
+  }
+
+  .row-promise {
+    @apply min-h-0 desktop:min-h-[640px];
+  }
+
+  .panel-content {
+    @apply flex flex-col justify-center bg-brand-white px-6 py-12 desktop:px-[max(1.5rem,calc((100%-420px)/2))] desktop:py-0;
+  }
+
+  .nav-divider {
+    @apply w-px shrink-0 self-stretch bg-brand-white/20;
+  }
+
+  /** Горизонтальная линия как в хедере — на тёмном фоне нижней секции */
+  .section-rule-top {
+    @apply border-t border-brand-white/40;
+  }
+
+  /** Figma SMART_ANIMATE: 300ms, OUT_CUBIC */
+  .transition-figma {
+    @apply transition-[color,background-color,opacity,border-color] duration-figma ease-figma-out;
+  }
+
+  /* Слот фиксированной высоты: низ страницы не смещается; плитка уезжает вверх через transform */
+  .footer-cta-slot {
+    @apply col-third h-[188px] self-end;
+  }
+
+  .footer-cta-tile {
+    @apply relative z-0 flex h-[188px] w-full items-center justify-center rounded-t-none;
+    transition:
+      transform 450ms cubic-bezier(0, 0, 0.58, 1),
+      border-radius 450ms cubic-bezier(0, 0, 0.58, 1);
+  }
+
+  .footer-cta-tile:hover {
+    @apply z-10 rounded-t-lg;
+    transform: translateY(-1.5rem);
+  }
+}
