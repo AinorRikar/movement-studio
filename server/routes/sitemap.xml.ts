@@ -1,7 +1,7 @@
 export default defineEventHandler((event) => {
   const config = useRuntimeConfig(event)
   const siteUrl = config.public.siteUrl as string
-  const baseURL = config.public.baseURL as string
+  const baseURL = config.public.appBaseURL as string
   const base = baseURL === '/' ? '' : baseURL.replace(/\/$/, '')
   const origin = siteUrl.replace(/\/$/, '')
 

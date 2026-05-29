@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import siteContent from './content/site.ru.json'
 
-const appBaseURL = process.env.NUXT_APP_BASE_URL || '/'
+const appBase =
+  process.env.NUXT_PUBLIC_APP_BASEURL
+  || process.env.NUXT_APP_BASE_URL
+  || '/'
+const appBaseURL = appBase.endsWith('/') ? appBase : `${appBase}/`
 
 export default defineNuxtConfig({
   srcDir: 'src/',
@@ -26,7 +30,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-      baseURL: appBaseURL,
+      appBaseURL,
     },
   },
   app: {

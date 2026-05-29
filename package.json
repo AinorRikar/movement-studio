@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "start": "node .output/server/index.mjs",
-    "favicons": "node scripts/generate-favicons.mjs"
+    "favicons": "node scripts/generate-favicons.mjs",
+    "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0",

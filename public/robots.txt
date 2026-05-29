@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: /movement-studios/sitemap.xml
+Sitemap: /movement-studio/sitemap.xml

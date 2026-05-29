@@ -24,7 +24,7 @@ export function usePageSeo(page: PageSeoKey) {
   const description = pageMeta.description
 
   const siteUrl = config.public.siteUrl as string
-  const baseURL = config.public.baseURL as string
+  const baseURL = config.public.appBaseURL as string
   const path = PAGE_PATHS[page]
   const canonical = joinAbsoluteUrl(siteUrl, baseURL, path)
   const ogImage = `${siteUrl.replace(/\/$/, '')}${publicAsset(seo.ogImage)}`
